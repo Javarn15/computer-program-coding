@@ -1,6 +1,20 @@
-name = input("What is your name")
 
+def get_name():
+    while True:
+        sub_name = input("Enter your name: ")
+        if len(sub_name) > 0:
+            return sub_name 
+        else:
+            print("Invalid input. Please enter your name.")
 
+# Subroutine to variable
+name = get_name()
+
+# ==========================
+# Section 2: Age Input and Age Range Validation
+# ==========================
+
+# Age input and validation subroutine
 def get_age(name):
     while True:
         try:
@@ -15,13 +29,26 @@ def get_age(name):
 # Subroutine to variable
 age = get_age(name)
 
+# Age range validation subroutine
 def validate_age(age):
-    if age < 5:
-        print("Sorry, you must be 5 or older to participate.")
+    if age < 12:
+        print("Sorry, you must be 5 or older to participate in the camp.")
         exit()
     if age > 17:
-        print("Sorry, you must be 17 or younger to go to camp .")
+        print("Sorry, you must be 17 or younger to participate in the camp.")
+        exit()
 
-        validate_age(age)
+# Validate age
+validate_age(age)
 
-        print()
+# Blank line
+print()
+
+activity_list = ['cultural immersion(5-days "easy" cost 800$)','Kayaking and Pancakes(3-days "moderate" costs 400$)','Mountain biking(4-days "difficult" costs 900$)']
+ 
+print('Choose an activity: ')
+print(f'1. {activity_list[0]}')
+print(f'2. {activity_list[1]}')
+print(f'3. {activity_list[2]}')
+    
+
