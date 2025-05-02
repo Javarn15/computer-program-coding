@@ -52,3 +52,12 @@ print(f'2. {activity_list[1]}')
 print(f'3. {activity_list[2]}')
     
 
+while True:
+        try:
+            chosen_activity = int(input("Enter the number of your chosen activity: "))
+            if chosen_activity in [1, 2, 3]:
+                break           
+            else:
+                print("Invalid input. Please enter a number between 1 and 3.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
