@@ -65,4 +65,22 @@ while True:
               #meal options 
 
 
-            meal_opitions = ['standered','vegetarian','dairy-free','no meal']
+            meal_opitions = ['standered','vegetarian','vegan']
+
+
+print('choose a meal option: ')
+print(f'1. {meal_opitions[0]}')
+print(f'2. {meal_opitions[1]}')
+print(f'3. {meal_opitions[2]}')
+
+
+# Activity input with validation
+while True:
+    try:
+        chosen_activity = int(input("Enter the number of your chosen activity: "))
+        if chosen_activity in [1, 2, 3]:
+            break
+        else:
+            print("Invalid input. Please enter a number between 1 and 3.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
