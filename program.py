@@ -61,3 +61,8 @@ while True:
                 print("Invalid input. Please enter a number between 1 and 3.")
         except ValueError:
             print("Invalid input. Please enter a valid number.")
+
+              #meal options 
+
+
+            meal_opitions = ['standered','vegetarian','dairy-free','no meal']
