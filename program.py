@@ -44,6 +44,7 @@ validate_age(age)
 # Blank line
 print()
 
+#activities to choose from 
 activity_list = ['cultural immersion(5-days "easy" cost 800$)','Kayaking and Pancakes(3-days "moderate" costs 400$)','Mountain biking(4-days "difficult" costs 900$)']
  
 print('Choose an activity: ')
