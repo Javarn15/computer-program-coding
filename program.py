@@ -84,3 +84,24 @@ while True:
             print("Invalid input. Please enter a number between 1 and 3.")
     except ValueError:
         print("Invalid input. Please enter a valid number.")
+
+        def def_shuttle_bus():
+    while True:
+        Shuttle_bus = input('Do you require a shuttle bus for $80? (yes/no) (y/n): ')
+        if Shuttle_bus in ['yes', 'y']:
+            shuttle_fee = 80
+            return shuttle_fee
+        elif Shuttle_bus in ['no', 'n']:
+            shuttle_fee = 0
+            return shuttle_fee
+        else:
+            print('Invalid input. Please enter "yes" or "no".')
+            print()
+ 
+shuttle_fee = def_shuttle_bus()
+print(f'Your shuttle bus fee is: ${shuttle_fee}')
+ 
+
+            
+
+
