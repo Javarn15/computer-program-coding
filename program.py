@@ -71,7 +71,7 @@ elif chosen_activity == 2:
 elif chosen_activity == 3:
     activity_fee = 900
 
-   
+   #meal opitions to choose from 
    
    
 meal_opitions = ['standered','vegetarian','vegan']
@@ -118,9 +118,9 @@ print(f'Your shuttle bus fee is: ${shuttle_fee}')
 
 total_cost= activity_fee + shuttle_fee 
 
-final = input(f" would you like to pay {total_cost}? (yes/no) (y/n) ")
+final = input(f" would you like to pay {total_cost}? to go to camp (yes/no) (y/n) ")
 if final == "yes":
-    print ("thanks welcome to camp")
+    print ("thank you enjoy your time at camp ")
 else:
     print("cancel")    
 
