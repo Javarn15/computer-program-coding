@@ -51,28 +51,6 @@ print('Choose an activity: ')
 print(f'1. {activity_list[0]}')
 print(f'2. {activity_list[1]}')
 print(f'3. {activity_list[2]}')
-    
-
-while True:
-        try:
-            chosen_activity = int(input("Enter the number of your chosen activity: "))
-            if chosen_activity in [1, 2, 3]:
-                break           
-            else:
-                print("Invalid input. Please enter a number between 1 and 3.")
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
-
-              #meal options 
-
-
-            meal_opitions = ['standered','vegetarian','vegan']
-
-
-print('choose a meal option: ')
-print(f'1. {meal_opitions[0]}')
-print(f'2. {meal_opitions[1]}')
-print(f'3. {meal_opitions[2]}')
 
 
 # Activity input with validation
@@ -86,7 +64,40 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a valid number.")
 
-        def def_shuttle_bus():
+if chosen_activity == 1:
+    activity_fee = 800
+elif chosen_activity == 2:
+    activity_fee = 400
+elif chosen_activity == 3:
+    activity_fee = 900
+
+   
+   
+   
+meal_opitions = ['standered','vegetarian','vegan']
+
+print('choose a meal option: ')
+print(f'1. {meal_opitions[0]}')
+print(f'2. {meal_opitions[1]}')
+print(f'3. {meal_opitions[2]}')
+
+while True:
+    try:
+        chosen_meal = int(input("Enter the number of your chosen meal: "))
+        if chosen_meal in [1, 2, 3]:
+            break
+        else:
+            print("Invalid input. Please enter a number between 1 and 3.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+
+
+
+
+
+
+def def_shuttle_bus():
     while True:
         Shuttle_bus = input('Do you require a shuttle bus for $80? (yes/no) (y/n): ')
         if Shuttle_bus in ['yes', 'y']:
@@ -102,6 +113,15 @@ while True:
 shuttle_fee = def_shuttle_bus()
 print(f'Your shuttle bus fee is: ${shuttle_fee}')
  
+
+total_cost= activity_fee + shuttle_fee 
+
+final = input(f" would you like to pay {total_cost}? (yes/no) (y/n) ")
+if final == "yes":
+    print ("thanks welcome to camp")
+else:
+    print("cancel")    
+
 
             
 
