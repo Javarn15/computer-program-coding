@@ -114,6 +114,8 @@ shuttle_fee = def_shuttle_bus()
 print(f'Your shuttle bus fee is: ${shuttle_fee}')
  
 
+ #total coat for the camp
+
 total_cost= activity_fee + shuttle_fee 
 
 final = input(f" would you like to pay {total_cost}? (yes/no) (y/n) ")
